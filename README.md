@@ -3,108 +3,137 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Creator Studio</title>
+<title>Nova AI Studio</title>
 
 <style>
-body{
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
 font-family:Arial,sans-serif;
-background:#111;
+}
+
+body{
+background:#0b1120;
 color:white;
-text-align:center;
 }
 
 header{
-background:#00c853;
+display:flex;
+justify-content:space-between;
+align-items:center;
 padding:20px;
-font-size:30px;
+background:#111827;
+}
+
+.logo{
+font-size:28px;
 font-weight:bold;
-}
-
-.container{
-padding:40px 20px;
-}
-
-h1{
-font-size:40px;
 color:#00ff99;
 }
 
-p{
-font-size:18px;
-color:#ddd;
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
 }
 
-button{
+.hero{
+text-align:center;
+padding:80px 20px;
+}
+
+.hero h1{
+font-size:42px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:18px;
+color:#cccccc;
+margin-bottom:30px;
+}
+
+.btn{
 background:#00ff99;
 color:black;
 padding:15px 30px;
-border:none;
 border-radius:10px;
-font-size:18px;
-cursor:pointer;
-margin-top:20px;
+text-decoration:none;
+font-weight:bold;
 }
 
-button:hover{
-background:white;
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+padding:40px;
 }
 
 .card{
-background:#222;
+background:#1e293b;
 padding:20px;
-margin:20px auto;
-width:90%;
-max-width:400px;
 border-radius:15px;
+text-align:center;
 }
 
-footer{
-margin-top:40px;
-padding:20px;
-background:#000;
-color:#999;
+.card h2{
+margin-bottom:10px;
+color:#00ff99;
 }
 </style>
-
 </head>
 
 <body>
 
 <header>
-AI Creator Studio
+<div class="logo">Nova AI Studio</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Features</a>
+<a href="#">Pricing</a>
+<a href="#">Login</a>
+</nav>
 </header>
 
-<div class="container">
+<section class="hero">
 
-<h1>Welcome Naeem!</h1>
+<h1>Create Amazing AI Videos</h1>
 
-<p>Create AI Videos, Images, Voice & Scripts from one place.</p>
+<p>
+Generate Videos, Images, Voice and Scripts using AI.
+</p>
 
-<button onclick="alert('Coming Soon!')">
-Generate AI Video
-</button>
+<a class="btn" href="#">
+Get Started
+</a>
 
-<div class="card">
-<h2>AI Script Generator</h2>
-<p>Generate professional scripts instantly.</p>
-</div>
+</section>
 
-<div class="card">
-<h2>AI Image Generator</h2>
-<p>Create stunning AI images.</p>
-</div>
+<section class="features">
 
 <div class="card">
-<h2>AI Voice Generator</h2>
-<p>Generate realistic AI voices.</p>
+<h2>🎥 AI Video</h2>
+<p>Generate videos from Script, Image or Prompt.</p>
 </div>
 
+<div class="card">
+<h2>🖼 AI Image</h2>
+<p>Create realistic AI images.</p>
 </div>
 
-<footer>
-© 2026 AI Creator Studio
-</footer>
+<div class="card">
+<h2>🎙 AI Voice</h2>
+<p>Generate natural AI voices.</p>
+</div>
+
+<div class="card">
+<h2>📝 AI Script</h2>
+<p>Create YouTube scripts instantly.</p>
+</div>
+
+</section>
 
 </body>
 </html>
